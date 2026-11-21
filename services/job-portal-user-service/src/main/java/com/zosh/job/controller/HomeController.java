@@ -1,5 +1,6 @@
 package com.zosh.job.controller;
 
+import com.zosh.job.domain.UserRole;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -7,6 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class HomeController {
     @GetMapping
     public String HomeController(){
-        return "Jon Portal User Service";
+
+        return "Jon Portal User Service----------" + UserRole.ROLE_JOB_SEEKER;
     }
 }
